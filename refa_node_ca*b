@@ -1,0 +1,223 @@
+NFA {
+  nodes: <ref *1> NodeList {
+    _nodeCounter: 7,
+    _nodeLimit: Infinity,
+    finals: Set(1) {
+      <ref *3> {
+        id: 6,
+        list: [Circular *1],
+        out: Map(0) {},
+        in: Map(2) {
+          <ref *4> {
+            id: 2,
+            list: [Circular *1],
+            out: Map(2) {
+              <ref *2> {
+                id: 5,
+                list: [Circular *1],
+                out: Map(2) {
+                  [Circular *2] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 65, max: 65 } ]
+                  },
+                  [Circular *3] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 66, max: 66 } ]
+                  }
+                },
+                in: Map(2) {
+                  [Circular *2] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 65, max: 65 } ]
+                  },
+                  [Circular *4] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 65, max: 65 } ]
+                  }
+                }
+              } => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 65, max: 65 } ]
+              },
+              [Circular *3] => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 66, max: 66 } ]
+              }
+            },
+            in: Map(1) {
+              {
+                id: 0,
+                list: [Circular *1],
+                out: Map(1) {
+                  [Circular *4] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 67, max: 67 } ]
+                  }
+                },
+                in: Map(0) {}
+              } => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 67, max: 67 } ]
+              }
+            }
+          } => CharSet { maximum: 65535, ranges: [ { min: 66, max: 66 } ] },
+          <ref *2> {
+            id: 5,
+            list: [Circular *1],
+            out: Map(2) {
+              [Circular *2] => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 65, max: 65 } ]
+              },
+              [Circular *3] => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 66, max: 66 } ]
+              }
+            },
+            in: Map(2) {
+              [Circular *2] => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 65, max: 65 } ]
+              },
+              <ref *4> {
+                id: 2,
+                list: [Circular *1],
+                out: Map(2) {
+                  [Circular *2] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 65, max: 65 } ]
+                  },
+                  [Circular *3] => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 66, max: 66 } ]
+                  }
+                },
+                in: Map(1) {
+                  {
+                    id: 0,
+                    list: [Circular *1],
+                    out: Map(1) {
+                      [Circular *4] => CharSet {
+                        maximum: 65535,
+                        ranges: [ { min: 67, max: 67 } ]
+                      }
+                    },
+                    in: Map(0) {}
+                  } => CharSet {
+                    maximum: 65535,
+                    ranges: [ { min: 67, max: 67 } ]
+                  }
+                }
+              } => CharSet {
+                maximum: 65535,
+                ranges: [ { min: 65, max: 65 } ]
+              }
+            }
+          } => CharSet { maximum: 65535, ranges: [ { min: 66, max: 66 } ] }
+        }
+      }
+    },
+    initial: <ref *5> {
+      id: 0,
+      list: [Circular *1],
+      out: Map(1) {
+        <ref *4> {
+          id: 2,
+          list: [Circular *1],
+          out: Map(2) {
+            <ref *2> {
+              id: 5,
+              list: [Circular *1],
+              out: Map(2) {
+                [Circular *2] => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 65, max: 65 } ]
+                },
+                <ref *3> {
+                  id: 6,
+                  list: [Circular *1],
+                  out: Map(0) {},
+                  in: Map(2) {
+                    [Circular *4] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 66, max: 66 } ]
+                    },
+                    [Circular *2] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 66, max: 66 } ]
+                    }
+                  }
+                } => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 66, max: 66 } ]
+                }
+              },
+              in: Map(2) {
+                [Circular *2] => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 65, max: 65 } ]
+                },
+                [Circular *4] => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 65, max: 65 } ]
+                }
+              }
+            } => CharSet {
+              maximum: 65535,
+              ranges: [ { min: 65, max: 65 } ]
+            },
+            <ref *3> {
+              id: 6,
+              list: [Circular *1],
+              out: Map(0) {},
+              in: Map(2) {
+                [Circular *4] => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 66, max: 66 } ]
+                },
+                <ref *2> {
+                  id: 5,
+                  list: [Circular *1],
+                  out: Map(2) {
+                    [Circular *2] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 65, max: 65 } ]
+                    },
+                    [Circular *3] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 66, max: 66 } ]
+                    }
+                  },
+                  in: Map(2) {
+                    [Circular *2] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 65, max: 65 } ]
+                    },
+                    [Circular *4] => CharSet {
+                      maximum: 65535,
+                      ranges: [ { min: 65, max: 65 } ]
+                    }
+                  }
+                } => CharSet {
+                  maximum: 65535,
+                  ranges: [ { min: 66, max: 66 } ]
+                }
+              }
+            } => CharSet {
+              maximum: 65535,
+              ranges: [ { min: 66, max: 66 } ]
+            }
+          },
+          in: Map(1) {
+            [Circular *5] => CharSet {
+              maximum: 65535,
+              ranges: [ { min: 67, max: 67 } ]
+            }
+          }
+        } => CharSet { maximum: 65535, ranges: [ { min: 67, max: 67 } ] }
+      },
+      in: Map(0) {}
+    }
+  },
+  maxCharacter: 65535
+}
