@@ -1,0 +1,44 @@
+NFA {
+  nodes: <ref *1> NodeList {
+    _nodeCounter: 3,
+    _nodeLimit: Infinity,
+    finals: Set(1) {
+      <ref *2> {
+        id: 2,
+        list: [Circular *1],
+        out: Map(0) {},
+        in: Map(1) {
+          {
+            id: 0,
+            list: [Circular *1],
+            out: Map(1) {
+              [Circular *2] => CharSet {
+                maximum: 65535,
+              }
+            },
+            in: Map(0) {}
+          } => CharSet { maximum: 65535, ranges: [ { min: 65, max: 65 } ] }
+        }
+      }
+    },
+    initial: <ref *3> {
+      id: 0,
+      list: [Circular *1],
+      out: Map(1) {
+        <ref *2> {
+          id: 2,
+          list: [Circular *1],
+          out: Map(0) {},
+          in: Map(1) {
+            [Circular *3] => CharSet {
+              maximum: 65535,
+              ranges: [ { min: 65, max: 65 } ]
+            }
+          }
+        } => CharSet { maximum: 65535, ranges: [ { min: 65, max: 65 } ] }
+      },
+      in: Map(0) {}
+    }
+  },
+  maxCharacter: 65535
+}
